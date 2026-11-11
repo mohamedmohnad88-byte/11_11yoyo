@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#170b20"><meta name="description" content="A little universe made just for you.">
+<title>11:11 — A Little Universe</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="particles"></div>
+<section class="screen intro" id="intro">
+ <div class="orb"></div><div class="topbar"><span>✦ 11:11</span><span class="date" id="today"></span></div>
+ <div class="intro-content">
+  <div class="kicker">A LITTLE WISH • A LITTLE UNIVERSE</div><div class="halo">♡</div>
+  <h1>Happy 11:11,<br><em id="recipient">Her Name</em></h1>
+  <p class="intro-sub" id="subtitle">This little universe was made just for you...</p>
+  <p class="intro-line" id="introLine">I have something special waiting for you.</p>
+  <button class="btn primary" id="begin">Enter my little universe&nbsp; ♡</button>
+  <div class="tiny">TAKE YOUR TIME • THERE IS NO RUSH</div>
+ </div>
+</section>
+
+<section class="screen hidden" id="envelopeStage">
+ <div class="stage">
+  <div class="kicker">CHAPTER 01 · A LITTLE SECRET</div><h2>Something is waiting for you</h2>
+  <p class="lead">رسالة صغيرة مستخبية جوا الظرف… افتحيها براحتك.</p>
+  <div class="envelope-wrap" id="envelopeWrap" role="button" tabindex="0" aria-label="Open the envelope">
+   <div class="envelope" id="envelope"><div class="letter-peek">For you, with love ♡</div><div class="flap"></div><div class="seal">♡</div></div>
+  </div>
+  <button class="btn primary hidden" id="readLetter">Read your letter ✧</button>
+ </div>
+</section>
+
+<section class="screen hidden" id="letterStage">
+ <div class="stage"><div class="kicker">A LETTER FROM THE HEART</div>
+  <div class="glass message"><div class="mini">JUST FOR YOU</div><h2 id="letterTitle">A little letter, from my heart</h2><div id="letterText"></div></div>
+  <button class="btn primary" id="toMemories" style="margin-top:25px">Discover little secrets&nbsp; →</button>
+ </div>
+</section>
+
+<section class="screen hidden" id="memoriesStage">
+ <div class="stage"><div class="kicker">CHAPTER 02 · LITTLE DETAILS</div><h2>Our Little Universe</h2><p class="lead">اضغطي على كل قلب… يمكن تلاقي جواه سر صغير.</p>
+  <div class="memories" id="memories"></div><button class="btn primary" id="toGifts">There is more for you&nbsp; →</button>
+ </div>
+</section>
+
+<section class="screen hidden" id="giftsStage">
+ <div class="stage"><div class="kicker">CHAPTER 03 · PICK A LITTLE MAGIC</div><h2>Choose your surprise</h2><p class="lead">اختاري هدية واحدة… وكل هدية جواها مفاجأة مختلفة.</p>
+  <div class="gifts">
+   <button class="glass gift" data-gift="0"><span class="boxicon">🎁</span><strong>A tiny wish</strong></button>
+   <button class="glass gift" data-gift="1"><span class="boxicon">🌹</span><strong>A little reminder</strong></button>
+   <button class="glass gift" data-gift="2"><span class="boxicon">🌙</span><strong>A secret note</strong></button>
+  </div>
+  <button class="btn" id="toMedia">Open our memory gallery&nbsp; →</button>
+ </div>
+</section>
+
+<section class="screen hidden" id="mediaStage">
+ <div class="stage"><div class="kicker">CHAPTER 04 · MOMENTS TO KEEP</div><h2>Little pieces of happiness</h2><p class="lead">A few memories, a song, and a moment just for you.</p>
+  <div class="gallery" id="gallery"></div>
+  <video class="video hidden" id="video" controls playsinline></video>
+  <div class="glass music" id="musicWrap"><div class="disc">♫</div><div style="flex:1"><strong style="color:#ffd2e3">A song for this moment</strong><audio id="music" controls></audio></div></div>
+  <button class="btn primary" id="toFinal">One last thing… ♡</button>
+ </div>
+</section>
+
+<section class="screen hidden" id="finalStage">
+ <div class="stage"><div class="kicker">THE LAST LITTLE SURPRISE</div><h2>Before you go…</h2>
+  <div class="glass final-card"><div class="final-copy" id="finalMessage"></div><div class="sign" id="signature">Mohand</div>
+   <div class="copyright">© <span id="year"></span> <span id="copyName">Mohand</span> — Designed &amp; Created with Love. All Rights Reserved.</div>
+  </div>
+  <button class="btn primary" id="replay" style="margin-top:25px">↻ Replay Our Little Universe</button>
+ </div>
+</section>
+
+<div class="modal hidden" id="modal"><div class="glass modal-card"><h3 id="modalTitle">A little surprise</h3><p id="modalText"></p><button class="btn primary" id="closeModal">Keep exploring ♡</button></div></div>
+<button id="sound" aria-label="Toggle sound" title="Toggle sound">♫</button>
+<script src="config.js"></script><script src="script.js"></script>
+</body></html>
