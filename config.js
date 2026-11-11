@@ -1,7 +1,7 @@
 // عدّل البيانات والوسائط من هنا فقط.
 // ضع ملفاتك داخل مجلد assets ثم اكتب أسماءها بالضبط.
 window.SITE_CONFIG = {
-  recipientName: "BOSY✨💞",
+  recipientName: "yoyo 💞🥀",
   senderName: "Mohand",
   subtitle: "This little universe was made just for you...",
   introLine: "I have something special waiting for you.",
